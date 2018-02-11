@@ -1136,29 +1136,29 @@ cal s:rule({
 
 " variable completion
 
-cal s:rule({
-    \'only':1,
-    \'context': '\s*\$$' ,
-    \'backward': '\<\U\w*$' ,
-    \'comp': function('s:CompVariable') })
-
-cal s:rule({
-    \'only':1,
-    \'context': '%$',
-    \'backward': '\<\U\w\+$',
-    \'comp': function('s:CompHashVariable') })
-
-cal s:rule({
-    \'only':1,
-    \'context': '@$',
-    \'backward': '\<\U\w\+$',
-    \'comp': function('s:CompArrayVariable') })
-
-cal s:rule({
-    \'only':1,
-    \'context': '&$',
-    \'backward': '\<\U\w\+$',
-    \'comp': function('s:CompBufferFunction') })
+"cal s:rule({
+"    \'only':1,
+"    \'context': '\s*\$$' ,
+"    \'backward': '\<\U\w*$' ,
+"    \'comp': function('s:CompVariable') })
+"
+"cal s:rule({
+"    \'only':1,
+"    \'context': '%$',
+"    \'backward': '\<\U\w\+$',
+"    \'comp': function('s:CompHashVariable') })
+"
+"cal s:rule({
+"    \'only':1,
+"    \'context': '@$',
+"    \'backward': '\<\U\w\+$',
+"    \'comp': function('s:CompArrayVariable') })
+"
+"cal s:rule({
+"    \'only':1,
+"    \'context': '&$',
+"    \'backward': '\<\U\w\+$',
+"    \'comp': function('s:CompBufferFunction') })
 
 
 " function completion
